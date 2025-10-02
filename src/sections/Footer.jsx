@@ -65,7 +65,7 @@ const Footer = () => {
           {/* Get in Touch */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">Get in Touch</h3>
-            <p>+(1) 808-468-1018</p>
+            <p>+(1) 808-468-1010</p>
             <p>Los Angeles, California United States</p>
             <p>
               <a
