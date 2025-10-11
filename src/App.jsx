@@ -23,6 +23,7 @@ import JivoChat from './JivoChat';
 
 const App = () => {
   return (
+    <>
     <Router>
       <CartProvider>
         <Navbar />
@@ -51,6 +52,8 @@ const App = () => {
         <Footer />
       </CartProvider>
     </Router>
+    <JivoChat/>
+    </>
   );
 };
 

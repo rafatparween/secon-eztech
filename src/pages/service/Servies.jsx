@@ -426,7 +426,7 @@ const Services = () => {
                   <Phone className="text-teal-600 mr-4 text-2xl" />
                   <div>
                     <p className="font-semibold text-gray-800">Call Us</p>
-                    <p className="text-gray-600">808-468-1018</p>
+                    <p className="text-gray-600"> (866) 866-6257</p>
                   </div>
                 </div>
                 <div className="flex items-center p-5 bg-gray-50 rounded-xl">

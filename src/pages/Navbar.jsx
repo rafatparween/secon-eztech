@@ -41,12 +41,6 @@ const Navbar = () => {
               Service
             </Link>
             <Link
-              to="/product"
-              className=" hover:border border-[#0f766e] text-gray-900 hover:text-[#0f766e] px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Product
-            </Link>
-            <Link
               to="/contact"
               className=" hover:border border-[#0f766e] text-gray-900 hover:text-[#0f766e] px-3 py-2 rounded-md text-sm font-medium"
             >

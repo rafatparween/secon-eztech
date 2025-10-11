@@ -65,14 +65,14 @@ const Footer = () => {
           {/* Get in Touch */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">Get in Touch</h3>
-            <p>+(1) 808-468-1010</p>
-            <p>Los Angeles, California United States</p>
+            <p> (866) 866-6257</p>
+            <p>3550 Gila Bnd, Casper, WY 82604</p>
             <p>
               <a
                 href="mailto:support@microsonicrepair.com"
                 className="hover:text-teal-200"
               >
-              support@hewlettprintersolution.com
+               support@hewlettprinterssolution.com
               </a>
             </p>
           </div>
@@ -96,8 +96,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center text-gray-100 mt-8">
-          &copy; {new Date().getFullYear()} Hewlett Printers Solution . All rights
-          reserved.
+          &copy; {new Date().getFullYear()} © 2025 Hewlett Printers Solution LLC. All Rights Reserved.
         </div>
       </div>
     </footer>

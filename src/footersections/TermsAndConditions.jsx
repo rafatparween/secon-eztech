@@ -1,157 +1,248 @@
+
+
+
+
+
+// TermsAndConditions.jsx
 import React from 'react';
 
 const TermsAndConditions = () => {
   return (
-    <div className="max-w-4xl mx-auto p-8 mt-20">
-      {termsAndConditionsContent.map((section, index) => (
-        <div key={index} className="mb-8">
-          <h2 className="text-2xl font-bold mb-4">{section.sectionTitle}</h2>
-          {section.content &&
-            section.content.map((paragraph, idx) => (
-              <p key={idx} className="mb-2">
-                {paragraph}
-              </p>
-            ))}
-          {section.subSections &&
-            section.subSections.map((subSection, subIdx) => (
-              <div key={subIdx} className="ml-4 mb-4">
-                <h3 className="text-xl font-semibold mb-2">
-                  {subSection.subTitle}
-                </h3>
-                {subSection.content.map((subParagraph, subPIdx) => (
-                  <p key={subPIdx} className="mb-2">
-                    {subParagraph}
-                  </p>
-                ))}
-              </div>
-            ))}
+    <div className="min-h-screen bg-gradient-to-br from-white to-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
+        
+        {/* Header Section */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-[#0F766E] rounded-full mb-6 mt-[60px]">
+            <span className="text-2xl">⚖️</span>
+          </div>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Terms and Conditions</h1>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-gray-600">
+            <p className="text-lg">Effective Date: October 2025</p>
+            <span className="hidden sm:block">•</span>
+            <p className="text-lg font-medium text-[#0F766E]">Hewlett Printers Solution LLC</p>
+          </div>
         </div>
-      ))}
+
+        {/* Main Content Card */}
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200">
+          
+          {/* General Section */}
+          <section className="p-8 border-b border-gray-100">
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 bg-[#0F766E] rounded-lg p-3 mt-1">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. General</h2>
+                <p className="text-gray-700 leading-relaxed">
+                  These Terms and Conditions (<span className="font-medium text-[#0F766E]">"Terms"</span>) govern your use of our website and services. By engaging our services, you agree to these Terms in full.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Services Section */}
+          <section className="p-8 border-b border-gray-100 bg-gray-50">
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 bg-[#0F766E] rounded-lg p-3 mt-1">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Services</h2>
+                <p className="text-gray-700 leading-relaxed">
+                  We provide remote printer setup, troubleshooting, installation, and related support. Our technicians operate under scheduled sessions agreed upon with the customer.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Payments Section */}
+          <section className="p-8 border-b border-gray-100">
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 bg-[#0F766E] rounded-lg p-3 mt-1">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">3. Payments</h2>
+                <p className="text-gray-700 leading-relaxed">
+                  All payments must be made in advance or as agreed upon via invoice. We accept secure payments through approved gateways such as Stripe, PayPal, or Square.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Refund Policy Section */}
+          <section className="p-8 border-b border-gray-100 bg-gray-50">
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 bg-[#0F766E] rounded-lg p-3 mt-1">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Refund and Cancellation Policy</h2>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  We strive for customer satisfaction.
+                </p>
+                <div className="bg-white rounded-xl p-6 border border-gray-200">
+                  <ul className="space-y-4 text-gray-700">
+                    <li className="flex items-start">
+                      <span className="text-[#0F766E] mr-3 mt-1">•</span>
+                      <span>Customers may request a refund within 7 days only if no service has been delivered or initiated.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-[#0F766E] mr-3 mt-1">•</span>
+                      <span>Once service work begins (diagnostics, installation, or troubleshooting), the transaction becomes non-refundable.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-[#0F766E] mr-3 mt-1">•</span>
+                      <span>Refund requests must be sent to <span className="text-[#0F766E] font-medium">support@hewlettprinterssolution.com</span> with proof of purchase.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-[#0F766E] mr-3 mt-1">•</span>
+                      <span>Approved refunds are processed to the original payment method within 5–10 business days.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* SMS Consent Section */}
+          <section className="p-8 border-b border-gray-100">
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 bg-[#0F766E] rounded-lg p-3 mt-1">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. SMS Consent</h2>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  By submitting your phone number, you agree to receive service-related text messages.
+                </p>
+                <div className="bg-gradient-to-r from-[#0F766E]/5 to-[#0F766E]/10 rounded-xl p-6 border border-[#0F766E]/20">
+                  <ul className="space-y-4 text-gray-700">
+                    <li className="flex flex-col sm:flex-row sm:items-center">
+                      <span className="font-medium text-gray-900 sm:w-32">Opt-Out:</span>
+                      <span>Reply <span className="font-mono bg-white px-2 py-1 rounded border">STOP</span> to unsubscribe.</span>
+                    </li>
+                    <li className="flex flex-col sm:flex-row sm:items-center">
+                      <span className="font-medium text-gray-900 sm:w-32">Help:</span>
+                      <span>Reply <span className="font-mono bg-white px-2 py-1 rounded border">HELP</span> or call <span className="text-[#0F766E] font-medium">(866) 866-6257</span>.</span>
+                    </li>
+                  </ul>
+                </div>
+                <p className="text-gray-700 mt-6 leading-relaxed">
+                  We do not send spam or promotional texts without prior consent.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Limitation of Liability Section */}
+          <section className="p-8 border-b border-gray-100 bg-gray-50">
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 bg-[#0F766E] rounded-lg p-3 mt-1">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">6. Limitation of Liability</h2>
+                <p className="text-gray-700 leading-relaxed">
+                  Hewlett Printers Solution LLC shall not be liable for indirect, incidental, or consequential damages arising from service use, system malfunction, or unauthorized access.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Intellectual Property Section */}
+          <section className="p-8 border-b border-gray-100">
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 bg-[#0F766E] rounded-lg p-3 mt-1">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. Intellectual Property</h2>
+                <p className="text-gray-700 leading-relaxed">
+                  All content, text, logos, and graphics on this website are the property of Hewlett Printers Solution LLC. Unauthorized use is strictly prohibited.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Governing Law Section */}
+          <section className="p-8 border-b border-gray-100 bg-gray-50">
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 bg-[#0F766E] rounded-lg p-3 mt-1">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. Governing Law</h2>
+                <p className="text-gray-700 leading-relaxed">
+                  These Terms are governed by the laws of the State of Wyoming, USA. Any disputes shall be resolved in courts located in Wyoming.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Contact Section */}
+          <section className="p-8">
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 bg-[#0F766E] rounded-lg p-3 mt-1">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. Contact Information</h2>
+                <div className="bg-white rounded-xl p-6 border border-gray-200">
+                  <div className="space-y-4 text-gray-700">
+                    <p className="text-lg font-medium text-gray-900">Hewlett Printers Solution LLC</p>
+                    <p className="flex items-start">
+                      <span className="text-gray-500 mr-3">📍</span>
+                      <span>3550 Gila Bnd, Casper, WY 82604, USA</span>
+                    </p>
+                    <p className="flex items-center">
+                      <span className="text-gray-500 mr-3">📧</span>
+                      <a href="mailto:support@hewlettprinterssolution.com" className="text-[#0F766E] hover:underline font-medium">
+                        support@hewlettprinterssolution.com
+                      </a>
+                    </p>
+                    <p className="flex items-center">
+                      <span className="text-gray-500 mr-3">📞</span>
+                      <a href="tel:8668666257" className="text-[#0F766E] hover:underline font-medium">
+                        (866) 866-6257
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        {/* Footer Note */}
+        <div className="text-center mt-12">
+          <p className="text-gray-500 text-sm">
+            Please read these terms carefully before using our services.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default TermsAndConditions;
-
-const termsAndConditionsContent = [
-  {
-    sectionTitle: 'Welcome to Hewlett Printers Solution !',
-    content: [
-      'These terms and conditions outline the rules and regulations for the use of Hewlett Printers Solution’s Website, located at https://hewlettprinterssolution.com/.',
-      'By accessing this website we assume you accept these terms and conditions. Do not continue to use Hewlett Printers Solution if you do not agree to take all of the terms and conditions stated on this page.',
-    ],
-  },
-  {
-    sectionTitle: 'Terminology',
-    content: [
-      'The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this website and compliant to the Company’s terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of us. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.',
-    ],
-  },
-  {
-    sectionTitle: 'Cookies',
-    content: [
-      'We employ the use of cookies. By accessing Hewlett Printers Solution, you agreed to use cookies in agreement with the Hewlett Printers Solution’s Privacy Policy.',
-      'Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.',
-    ],
-  },
-  {
-    sectionTitle: 'License',
-    content: [
-      'Unless otherwise stated,  Hewlett Printers Solution  and/or its licensors own the intellectual property rights for all material on Hewlett Printers Solution. All intellectual property rights are reserved. You may access this from Hewlett Printers Solution for your own personal use subjected to restrictions set in these terms and conditions.',
-      'You must not:',
-      'Republish material from Hewlett Printers Solution',
-      'Sell, rent or sub-license material from Hewlett Printers Solution',
-      'Reproduce, duplicate or copy material from  Hewlett Printers Solution',
-      'Redistribute content from Hewlett Printers Solution',
-      'This Agreement shall begin on the date hereof. Our Terms and Conditions were created with the help of the Free Terms and Conditions Generator.',
-    ],
-  },
-  {
-    sectionTitle: 'Comments',
-    content: [
-      'Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Hewlett Printers Solution does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of Hewlett Printers Solution, its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, Hewlett Printers Solution shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.',
-      'Hewlett Printers Solution reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.',
-      'You warrant and represent that:',
-      'You are entitled to post the Comments on our website and have all necessary licenses and consents to do so;',
-      'The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party;',
-      'The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy',
-      'The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.',
-      'You hereby grant Hewlett Printers Solution a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.',
-    ],
-  },
-  {
-    sectionTitle: 'Hyperlinking to our Content',
-    subSections: [
-      {
-        subTitle: 'Approved Organizations',
-        content: [
-          'The following organizations may link to our Website without prior written approval:',
-          'Government agencies;',
-          'Search engines;',
-          'News organizations;',
-          'Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and',
-          'System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.',
-          'These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party’s site.',
-        ],
-      },
-      {
-        subTitle: 'Other Link Requests',
-        content: [
-          'We may consider and approve other link requests from the following types of organizations:',
-          'commonly-known consumer and/or business information sources;',
-          'dot.com community sites;',
-          'associations or other groups representing charities;',
-          'online directory distributors;',
-          'internet portals;',
-          'accounting, law and consulting firms; and',
-          'educational institutions and trade associations.',
-          'We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Hewlett Printers Solution; and (d) the link is in the context of general resource information.',
-          'These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party’s site.',
-          'If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Hewlett Printers Solution. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.',
-          'Approved organizations may hyperlink to our Website as follows:',
-          'By use of our corporate name; or',
-          'By use of the uniform resource locator being linked to; or',
-          'By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party’s site.',
-          'No use of Hewlett Printers Solution’s logo or other artwork will be allowed for linking absent a trademark license agreement.',
-        ],
-      },
-    ],
-  },
-  {
-    sectionTitle: 'iFrames',
-    content: [
-      'Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.',
-    ],
-  },
-  {
-    sectionTitle: 'Content Liability',
-    content: [
-      'We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.',
-    ],
-  },
-  {
-    sectionTitle: 'Reservation of Rights',
-    content: [
-      'We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it’s linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.',
-    ],
-  },
-  {
-    sectionTitle: 'Removal of links from our website',
-    content: [
-      'If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.',
-      'We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.',
-    ],
-  },
-  {
-    sectionTitle: 'Disclaimer',
-    content: [
-      'To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:',
-      'limit or exclude our or your liability for death or personal injury;',
-      'limit or exclude our or your liability for fraud or fraudulent misrepresentation;',
-      'limit any of our or your liabilities in any way that is not permitted under applicable law; or',
-      'exclude any of our or your liabilities that may not be excluded under applicable law.',
-      'The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.',
-      'As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.',
-    ],
-  },
-];
