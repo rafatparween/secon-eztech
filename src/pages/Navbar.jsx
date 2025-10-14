@@ -19,7 +19,7 @@ const Navbar = () => {
          <div className="flex items-center ">
             <Link to="/">
               <img
-                src="/public/hpslogo.png"
+                src="/hpslogo.png"
                 alt="HPS Logo"
                 className="w-[120px] h-[120px] rounded-full" // small circle for navbar
               />
