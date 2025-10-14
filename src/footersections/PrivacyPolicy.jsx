@@ -1,151 +1,413 @@
-// PrivacyPolicy.jsx
 import React from 'react';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
-      {/* Header Section */}
-      <div className="max-w-4xl mx-auto text-center mb-16">
-        <h1 className="text-4xl font-bold text-[#0F766E]  mt-[70px]">Privacy Policy</h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Effective Date: October 2025
-        </p>
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-[#0F766E] to-black text-white mt-[60px]">
+      {/* Header */}
+      <header className="bg-[#0F766E] border-b border-teal-700">
+        <div className="max-w-4xl mx-auto px-4 py-8 text-center">
+          <h1 className="text-4xl font-bold mb-6">Privacy Policy</h1>
+          <div className="text-lg text-teal-100 space-y-2">
+            <p>Effective Date: January 2025</p>
+            <p>Last Updated: January 2025</p>
+            <p className="mt-4">This Privacy Policy describes how Hewlett Printers Solution LLC ("Company," "we," "us," or "our") collects, uses, stores, and protects your information when you visit https://www.hewlettprinterssolution.com or use our services.</p>
+            <p className="font-semibold">By using our website or services, you agree to the terms of this Privacy Policy.</p>
+          </div>
+        </div>
+      </header>
 
-      {/* Policy Content */}
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-        
-        {/* Introduction Section */}
-        <section className="p-8 border-b border-gray-100">
-          <div className="flex items-start space-x-4">
-            <div className="bg-[#0F766E] rounded-lg p-3 mt-1">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+      {/* Main Content */}
+      <main className="max-w-4xl mx-auto px-4 py-8">
+        {/* Divider */}
+        <div className="border-t border-teal-600 my-8"></div>
+
+        {/* 1. Company Information */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-teal-300 mb-6">1. Company Information</h2>
+          <div className="bg-teal-800/30 p-6 rounded-lg border border-teal-600">
+            <div className="space-y-3 text-gray-200">
+              <p><span className="font-semibold text-teal-300">Business Name:</span> Hewlett Printers Solution LLC</p>
+              <p><span className="font-semibold text-teal-300">Address:</span> 3550 Gila Bnd, Casper, WY 82604, USA</p>
+              <p><span className="font-semibold text-teal-300">Email:</span> support@hewlettprinterssolution.com</p>
+              <p><span className="font-semibold text-teal-300">Phone:</span> (866) 866-6257</p>
+              <p><span className="font-semibold text-teal-300">Website:</span> https://www.hewlettprinterssolution.com</p>
             </div>
+          </div>
+        </section>
+
+        {/* Divider */}
+        <div className="border-t border-teal-600 my-8"></div>
+
+        {/* 2. Information We Collect */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-teal-300 mb-6">2. Information We Collect</h2>
+          <p className="text-gray-200 mb-6">We may collect the following types of information:</p>
+          
+          <div className="space-y-8">
+            {/* Personal Information */}
             <div>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Introduction</h2>
-              <p className="text-gray-700 leading-relaxed">
-                Hewlett Printers Solution LLC (<span className="font-medium text-[#0F766E]">"we," "us," or "our"</span>) respects your privacy. This Privacy Policy explains how we collect, use, and protect information you provide when you visit our website, use our services, or communicate with us via SMS, phone, or email.
-              </p>
-              <p className="text-gray-700 mt-4 leading-relaxed">
-                By using our website or services, you agree to this Privacy Policy.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Information We Collect Section */}
-        <section className="p-8 border-b border-gray-100 bg-gray-50">
-          <div className="flex items-start space-x-4">
-            <div className="bg-[#0F766E] rounded-lg p-3 mt-1">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-            </div>
-            <div className="flex-1">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Information We Collect</h2>
-              <p className="text-gray-700 mb-4 leading-relaxed">
-                We collect the following types of information:
-              </p>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-[#0F766E] mr-2">•</span>
-                  <span><span className="font-medium text-gray-900">Personal Information:</span> Name, phone number, email, billing address, and payment information when you request support or make a purchase.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#0F766E] mr-2">•</span>
-                  <span><span className="font-medium text-gray-900">Technical Data:</span> IP address, browser type, and device information for analytics and security.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#0F766E] mr-2">•</span>
-                  <span><span className="font-medium text-gray-900">Communications:</span> Records of phone calls, SMS messages, and emails exchanged for service-related purposes.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* SMS Policy Section with Highlight */}
-        <section className="p-8 border-b border-gray-100 bg-gradient-to-r from-[#0F766E]/5 to-[#0F766E]/10">
-          <div className="flex items-start space-x-4">
-            <div className="bg-[#0F766E] rounded-lg p-3 mt-1">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-              </svg>
-            </div>
-            <div className="flex-1">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. SMS and Text Messaging Policy</h2>
-              <p className="text-gray-700 mb-4 leading-relaxed">
-                By submitting your phone number through our website or contacting us by phone, you consent to receive SMS messages related to your service request.
-              </p>
-              <div className="bg-white rounded-xl p-6 mt-6 shadow-sm border border-gray-200">
-                <ul className="space-y-4 text-gray-700">
-                  <li className="flex flex-col sm:flex-row sm:items-center">
-                    <span className="font-medium text-gray-900 sm:w-40">Message Frequency:</span>
-                    <span>Occasional, as needed for service updates or confirmations.</span>
-                  </li>
-                  <li className="flex flex-col sm:flex-row sm:items-center">
-                    <span className="font-medium text-gray-900 sm:w-40">Opt-Out:</span>
-                    <span>Reply <span className="font-mono bg-gray-100 px-2 py-1 rounded">STOP</span> to unsubscribe.</span>
-                  </li>
-                  <li className="flex flex-col sm:flex-row sm:items-center">
-                    <span className="font-medium text-gray-900 sm:w-40">Help:</span>
-                    <span>Reply <span className="font-mono bg-gray-100 px-2 py-1 rounded">HELP</span> or contact us at <span className="text-[#0F766E] font-medium">(866) 866-6257</span>.</span>
-                  </li>
-                  <li className="flex flex-col sm:flex-row sm:items-start">
-                    <span className="font-medium text-gray-900 sm:w-40">Carrier Disclaimer:</span>
-                    <span>Message and data rates may apply.</span>
-                  </li>
-                </ul>
+              <h3 className="text-xl font-semibold text-teal-400 mb-4">a. Personal Information</h3>
+              <div className="grid md:grid-cols-2 gap-3 ml-4">
+                <div className="flex items-start">
+                  <span className="text-teal-400 mr-3 mt-1">•</span>
+                  <p className="text-gray-200">Full Name</p>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-teal-400 mr-3 mt-1">•</span>
+                  <p className="text-gray-200">Phone Number</p>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-teal-400 mr-3 mt-1">•</span>
+                  <p className="text-gray-200">Email Address</p>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-teal-400 mr-3 mt-1">•</span>
+                  <p className="text-gray-200">Billing Address</p>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-teal-400 mr-3 mt-1">•</span>
+                  <p className="text-gray-200">Payment Information</p>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-teal-400 mr-3 mt-1">•</span>
+                  <p className="text-gray-200">Service Request Details</p>
+                </div>
               </div>
-              <p className="text-gray-700 mt-6 leading-relaxed">
-                We do not share, sell, or lease customer phone numbers to third parties.
-              </p>
             </div>
-          </div>
-        </section>
 
-        {/* Contact Section */}
-        <section className="p-8">
-          <div className="flex items-start space-x-4">
-            <div className="bg-[#0F766E] rounded-lg p-3 mt-1">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-            </div>
+            {/* Technical Information */}
             <div>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. Contact</h2>
-              <p className="text-gray-700 mb-4 leading-relaxed">
-                For questions or concerns:
-              </p>
-              <div className="bg-gray-50 rounded-xl p-6 space-y-3">
-                <p className="text-gray-900 font-medium">Hewlett Printers Solution LLC</p>
-                <p className="text-gray-700">3550 Gila Bnd, Casper, WY 82604, USA</p>
-                <p className="text-gray-700 flex items-center">
-                  <span className="mr-2">📧</span>
-                  <a href="mailto:support@hewlettprinterssolution.com" className="text-[#0F766E] hover:underline">
-                    support@hewlettprinterssolution.com
-                  </a>
-                </p>
-                <p className="text-gray-700 flex items-center">
-                  <span className="mr-2">📞</span>
-                  <a href="tel:8668666257" className="text-[#0F766E] hover:underline">
-                    (866) 866-6257
-                  </a>
-                </p>
+              <h3 className="text-xl font-semibold text-teal-400 mb-4">b. Technical Information</h3>
+              <div className="grid md:grid-cols-2 gap-3 ml-4">
+                <div className="flex items-start">
+                  <span className="text-teal-400 mr-3 mt-1">•</span>
+                  <p className="text-gray-200">IP Address</p>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-teal-400 mr-3 mt-1">•</span>
+                  <p className="text-gray-200">Browser Type</p>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-teal-400 mr-3 mt-1">•</span>
+                  <p className="text-gray-200">Device Information</p>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-teal-400 mr-3 mt-1">•</span>
+                  <p className="text-gray-200">Cookies / Tracking Data</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Communication Records */}
+            <div>
+              <h3 className="text-xl font-semibold text-teal-400 mb-4">c. Communication Records</h3>
+              <div className="grid md:grid-cols-2 gap-3 ml-4">
+                <div className="flex items-start">
+                  <span className="text-teal-400 mr-3 mt-1">•</span>
+                  <p className="text-gray-200">Phone call history</p>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-teal-400 mr-3 mt-1">•</span>
+                  <p className="text-gray-200">SMS messages</p>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-teal-400 mr-3 mt-1">•</span>
+                  <p className="text-gray-200">Emails</p>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-teal-400 mr-3 mt-1">•</span>
+                  <p className="text-gray-200">Live chat or form submissions</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
-      </div>
 
-      {/* Footer Note */}
-      <div className="max-w-4xl mx-auto mt-12 text-center">
-        <p className="text-gray-500 text-sm">
-          Thank you for trusting Hewlett Printers Solution LLC with your privacy.
-        </p>
-      </div>
+        {/* Divider */}
+        <div className="border-t border-teal-600 my-8"></div>
+
+        {/* 3. How We Use Your Information */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-teal-300 mb-6">3. How We Use Your Information</h2>
+          <p className="text-gray-200 mb-4">We use your information to:</p>
+          <div className="grid md:grid-cols-2 gap-4 ml-4">
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Provide printer support and technical services</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Schedule remote or on-site service appointments</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Process payments securely</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Send service alerts and account messages via SMS or email</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Improve website performance and customer support quality</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Prevent fraud and protect our business</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Divider */}
+        <div className="border-t border-teal-600 my-8"></div>
+
+        {/* 4. SMS/Text Messaging Consent */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-teal-300 mb-6">4. SMS/Text Messaging Consent (TCPA Compliance)</h2>
+          <p className="text-gray-200 mb-4">By providing your mobile number, you consent to receive SMS messages from Hewlett Printers Solution LLC for:</p>
+          <div className="space-y-3 ml-4 mb-6">
+            <div className="flex items-start">
+              <span className="text-green-400 mr-3 mt-1">✅</span>
+              <p className="text-gray-200">Service notifications</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-green-400 mr-3 mt-1">✅</span>
+              <p className="text-gray-200">Appointment confirmations</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-green-400 mr-3 mt-1">✅</span>
+              <p className="text-gray-200">Account-related updates</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-green-400 mr-3 mt-1">✅</span>
+              <p className="text-gray-200">Support communication</p>
+            </div>
+          </div>
+          <div className="space-y-2 ml-4">
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Message frequency varies</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Message and data rates may apply</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Reply STOP to unsubscribe</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Reply HELP for help</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Consent is not a condition of purchase</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Divider */}
+        <div className="border-t border-teal-600 my-8"></div>
+
+        {/* 5. Cookies & Tracking */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-teal-300 mb-6">5. Cookies & Tracking</h2>
+          <p className="text-gray-200">We use cookies and tracking technologies to improve website performance and analyze traffic. You may disable cookies in your browser, but some features may not work properly.</p>
+        </section>
+
+        {/* Divider */}
+        <div className="border-t border-teal-600 my-8"></div>
+
+        {/* 6. Data Sharing */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-teal-300 mb-6">6. Data Sharing</h2>
+          <p className="text-gray-200 mb-4">We do not sell or share personal data with third parties for marketing.<br />
+          We may share data only with:</p>
+          <div className="space-y-3 ml-4 mb-4">
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Payment processors (Stripe, PayPal, bank partners)</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">IT and service support vendors</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Law enforcement if required by law</p>
+            </div>
+          </div>
+          <p className="text-gray-200 font-semibold">We do not sell customer phone numbers or emails.</p>
+        </section>
+
+        {/* Divider */}
+        <div className="border-t border-teal-600 my-8"></div>
+
+        {/* 7. Data Security */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-teal-300 mb-6">7. Data Security</h2>
+          <p className="text-gray-200">We use SSL encryption, firewalls, and secure payment gateways to protect your data. However, no system is 100% secure—data is shared at your own risk.</p>
+        </section>
+
+        {/* Divider */}
+        <div className="border-t border-teal-600 my-8"></div>
+
+        {/* 8. Data Retention */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-teal-300 mb-6">8. Data Retention</h2>
+          <p className="text-gray-200 mb-4">We retain customer data only as long as necessary to:</p>
+          <div className="grid md:grid-cols-2 gap-3 ml-4">
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Provide services</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Meet legal obligations</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Resolve disputes</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Prevent fraud</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Divider */}
+        <div className="border-t border-teal-600 my-8"></div>
+
+        {/* 9. Your Rights */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-teal-300 mb-6">9. Your Rights</h2>
+          <p className="text-gray-200 mb-4">Depending on your location, you may:</p>
+          <div className="grid md:grid-cols-2 gap-3 ml-4 mb-6">
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Request a copy of your data</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Update or correct your data</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Request deletion of data</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Opt out of marketing messages at any time</p>
+            </div>
+          </div>
+          <p className="text-gray-200 font-semibold">Contact: support@hewlettprinterssolution.com</p>
+        </section>
+
+        {/* Divider */}
+        <div className="border-t border-teal-600 my-8"></div>
+
+        {/* 10. GDPR Compliance */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-teal-300 mb-6">10. GDPR (EU/UK) Compliance</h2>
+          <p className="text-gray-200 mb-4">If you are in the European Union or UK, you have rights to:</p>
+          <div className="grid md:grid-cols-2 gap-3 ml-4">
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Access and delete your data</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Restrict processing</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Request data portability</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">File a complaint with your local Data Protection Authority</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Divider */}
+        <div className="border-t border-teal-600 my-8"></div>
+
+        {/* 11. CCPA Privacy Rights */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-teal-300 mb-6">11. CCPA (California) Privacy Rights</h2>
+          <p className="text-gray-200 mb-4">California residents have the right to:</p>
+          <div className="grid md:grid-cols-2 gap-3 ml-4 mb-6">
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Request disclosure of data we collect</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Request deletion of personal information</p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-teal-400 mr-3 mt-1">•</span>
+              <p className="text-gray-200">Opt-out of data sharing (we do not sell data)</p>
+            </div>
+          </div>
+          <p className="text-gray-200">We do not discriminate against users for exercising privacy rights.</p>
+        </section>
+
+        {/* Divider */}
+        <div className="border-t border-teal-600 my-8"></div>
+
+        {/* 12. Third-Party Links */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-teal-300 mb-6">12. Third-Party Links</h2>
+          <p className="text-gray-200">Our website may contain links to third-party sites. We are not responsible for their privacy practices.</p>
+        </section>
+
+        {/* Divider */}
+        <div className="border-t border-teal-600 my-8"></div>
+
+        {/* 13. Children's Privacy */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-teal-300 mb-6">13. Children's Privacy</h2>
+          <p className="text-gray-200">We do not knowingly collect or market to children under age 13.</p>
+        </section>
+
+        {/* Divider */}
+        <div className="border-t border-teal-600 my-8"></div>
+
+        {/* 14. Changes to This Policy */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-teal-300 mb-6">14. Changes to This Policy</h2>
+          <p className="text-gray-200">We may update this Privacy Policy anytime. Updates will be posted on this page with a new effective date.</p>
+        </section>
+
+        {/* Divider */}
+        <div className="border-t border-teal-600 my-8"></div>
+
+        {/* 15. Contact Us */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-teal-300 mb-6">15. Contact Us</h2>
+          <div className="bg-teal-800/30 p-6 rounded-lg border border-teal-600">
+            <p className="text-gray-200 mb-4">For privacy questions or requests, contact:</p>
+            <div className="space-y-3 text-gray-200">
+              <p className="flex items-center text-lg">
+                <span className="mr-3">📧</span>
+                support@hewlettprinterssolution.com
+              </p>
+              <p className="flex items-center text-lg">
+                <span className="mr-3">📞</span>
+                (866) 866-6257
+              </p>
+              <p className="flex items-center text-lg">
+                <span className="mr-3">🏢</span>
+                3550 Gila Bnd, Casper, WY 82604, USA
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   );
 };

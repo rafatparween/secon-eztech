@@ -15,9 +15,17 @@ const Navbar = () => {
     <nav className="bg-gray-100 fixed top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-[#0f766e]">
-          Hewlett Printers Solution!
+
+         <div className="flex items-center ">
+            <Link to="/">
+              <img
+                src="src/public/hpslogo.png"
+                alt="HPS Logo"
+                className="w-[120px] h-[120px] rounded-full" // small circle for navbar
+              />
+            </Link>
+            <Link to="/" className="text-2xl font-bold text-[#0F766E]">
+             Hewlett Printers Solution
             </Link>
           </div>
           <div className="hidden lg:flex lg:items-center lg:space-x-8">

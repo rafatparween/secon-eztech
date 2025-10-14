@@ -20,6 +20,7 @@ import ProductDetail from './pages/product/ProductDetail';
 import Cart from './pages/product/Cart';
 import CartProvider from './pages/product/CartContext';
 import JivoChat from './JivoChat';
+import SmsTcpa from './footersections/sms-tcpa';
 
 const App = () => {
   return (
@@ -47,6 +48,7 @@ const App = () => {
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/return-refundpolicy" element={<ReturnRefundPolicy />} />
           <Route path="/terms-conditions" element={<TermsAndConditions />} />
+          <Route path="/sms-tcpa" element={<SmsTcpa/>} />
         </Routes>
 
         <Footer />
