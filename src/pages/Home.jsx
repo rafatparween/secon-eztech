@@ -5,63 +5,105 @@ import CustomerReview from '../sections/CustomerReview';
 import HelpPage from '../sections/HelpPage';
 import PeaceOfMindGuarantee from '../sections/PeaceOfMindGuarantee';
 import JivoChat from '../JivoChat';
+import { Chat } from '@mui/icons-material';
 
 const Home = () => {
   return (
     <>
       <div className="bg-teal-50 min-h-screen flex items-center justify-center">
-        <div className="max-w-screen-xl mx-auto w-90 p-8 bg-white shadow-lg  overflow-hidden mt-20">
-          <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2 p-4">
-              <h1 className="text-4xl font-bold text-[#0f766e] mb-4">
-                Welcome to Hewlett Printers Solution!{' '}
-              </h1>
-              <p className="text-gray-700 text-lg mb-4">
-                Welcome to our independent third-party company specializing in
-               new printers. We offer high-quality printers that have
-                been meticulously restored to perform like new.
-              </p>
-              <p className="text-gray-700 text-lg mb-4">
-                Whether you need a laser printer, inkjet printer, or
-                multifunction printer, we have a wide selection to meet your
-                needs. Browse our catalog and find the perfect printer for your
-                home or office. Each new printer undergoes rigorous
-                testing to ensure reliability and performance, backed by our
-                warranty for peace of mind.
-              </p>
-            </div>
-            <div className="md:w-1/2 p-4 flex items-center justify-center">
-              <img
-                src="https://img.freepik.com/premium-photo/close-up-office-table-with-printer-it_93675-81686.jpg?w=826"
-                alt="new Printer"
-                className="rounded-lg shadow-xl h-full object-cover"
-              />
-            </div>
+        <div className=" min-h-screen flex items-center justify-center py-12 mt-[50px]">
+  <div className="max-w-[1280px] mx-auto w-full p-6">
+    <div className="bg-white rounded-2xl shadow-2xl overflow-hidden transform hover:shadow-3xl transition-all duration-300">
+      <div className="flex flex-col lg:flex-row">
+        {/* Text Content */}
+        <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+          <h1 className="text-4xl lg:text-5xl font-bold text-teal-800 mb-6 leading-tight">
+            Printer Not Working? Computer Slow? We Fix It Fast.
+          </h1>
+          <p className="text-gray-700 text-lg lg:text-xl mb-8 leading-relaxed">
+            We've helped thousands of users restore their printers and computers. We believe in honest service, real solutions, and long-term customer relationships.
+            Professional Remote Printer & Computer Support – Fast, Secure & Trusted in the USA & Canada
+          </p>
+         <div className="bg-gradient-to-r from-teal-600 via-teal-700 to-teal-800 text-white p-6 rounded-2xl text-center shadow-2xl transform hover:scale-[1.02] hover:shadow-3xl transition-all duration-300 border border-teal-400/30 relative overflow-hidden group">
+  <div className="absolute inset-0 bg-gradient-to-r from-white/5 via-transparent to-white/5"></div>
+  <div className="relative flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+    <div className="flex items-center gap-3">
+      <div className="text-2xl animate-bounce">📞</div>
+      <div className="text-left">
+        <div className="text-teal-200 text-sm font-medium">Call Now</div>
+        <div className="text-white text-[15px] font-bold tracking-wide">(866) 866-6257</div>
+      </div>
+    </div>
+    
+    <div className="hidden sm:block w-px h-8 bg-teal-400/50"></div>
+    
+    <div className="flex items-center gap-3">
+      <div className="text-2xl">💬</div>
+      <div className="text-left">
+        <div className="text-teal-200 text-sm font-medium">Instant Support</div>
+        <div className="text-white text-[15px] font-semibold">Remote Support Available</div>
+      </div>
+    </div>
+  </div>
+  
+  {/* Shine effect */}
+  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 transform translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+  
+  {/* Bottom glow */}
+  <div className="absolute bottom-0 left-1/4 right-1/4 h-1 bg-gradient-to-r from-transparent via-teal-400 to-transparent rounded-full"></div>
+</div>
+        </div>
+
+        {/* Image Content */}
+        <div className="lg:w-1/2 p-4 lg:p-8 flex items-center justify-center">
+          <div className="relative w-full h-80 lg:h-96 rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+            <img
+              src="https://img.freepik.com/premium-photo/close-up-office-table-with-printer-it_93675-81686.jpg?w=826"
+              alt="Professional Printer Support"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-teal-900/10 to-transparent"></div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+      </div>
 
       {/* ------------------- */}
-      <section className="bg-teal-50 py-4 flex justify-center items-center">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
-          <div className="flex justify-center items-center bg-white p-4 rounded-lg shadow-lg">
-            <BuildIcon style={{ color: '#1e3a8a', marginTop: '8px' }} />
-            <p className="text-[#0f766e] mt-2">Thousands of Techs Nationwide</p>
-          </div>
+      {/* CTA Section */}
+<section className="bg-gradient-to-r from-teal-600 via-teal-700 to-teal-800 rounded-3xl p-12 text-center text-white shadow-2xl transform hover:shadow-3xl transition-all duration-300">
+  <div className="max-w-4xl mx-auto">
+    <div className="text-2xl font-semibold mb-2 flex items-center justify-center gap-3">
+      <span className="text-3xl animate-pulse">📞</span>
+      Need Immediate Help?
+    </div>
+    
+    <p className="text-teal-100 text-xl mb-6 font-medium">
+      We're here for you.
+    </p>
 
-          <div className="flex justify-center items-center bg-white p-4 rounded-lg shadow-lg">
-            <AccessTimeIcon style={{ color: '#1e3a8a', marginTop: '8px' }} />
-            <p className="text-[#0f766e] mt-2">Service as Soon as Today</p>
-          </div>
+    <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-white to-teal-100 bg-clip-text text-transparent">
+      Ready to Get Your Printer Working?
+    </h2>
+    
+    <p className="text-xl mb-10 max-w-2xl mx-auto text-teal-50 leading-relaxed">
+      Our team of printer experts is ready to help you with all your printing needs
+    </p>
 
-          <div className="flex justify-center items-center bg-white p-4 rounded-lg shadow-lg">
-            <CheckCircleOutlineIcon
-              style={{ color: '#1e3a8a', marginTop: '8px' }}
-            />
-            <p className="text-[#0f766e] mt-2">Don’t Pay Until It’s Done</p>
-          </div>
-        </div>
-      </section>
+    <div className="flex flex-col items-center gap-6">
+      <p className="text-teal-100 text-lg font-medium">
+        Click "Get Help Now" to start your support session.
+      </p>
+      
+      <button className="bg-white text-teal-700 font-bold py-4 px-10 rounded-xl flex items-center justify-center hover:bg-gray-50 hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-xl border-2 border-white">
+        <Chat className="mr-3 w-5 h-5" />
+        Chat with an Expert
+      </button>
+    </div>
+  </div>
+</section>
       <PeaceOfMindGuarantee />
       <CustomerReview />
       <HelpPage />
