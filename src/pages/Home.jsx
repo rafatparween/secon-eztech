@@ -18,8 +18,10 @@ const Home = () => {
         {/* Text Content */}
         <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
           <h1 className="text-4xl lg:text-5xl font-bold text-teal-800 mb-6 leading-tight">
-            Printer Not Working? Computer Slow? We Fix It Fast.
-          </h1>
+  Printer Not Working?<br />
+  Computer Slow?<br />
+  We Fix It Fast.
+</h1>
           <p className="text-gray-700 text-lg lg:text-xl mb-8 leading-relaxed">
             We've helped thousands of users restore their printers and computers. We believe in honest service, real solutions, and long-term customer relationships.
             Professional Remote Printer & Computer Support – Fast, Secure & Trusted in the USA & Canada
@@ -73,32 +75,32 @@ const Home = () => {
 
       {/* ------------------- */}
       {/* CTA Section */}
-<section className="bg-gradient-to-r from-teal-600 via-teal-700 to-teal-800 rounded-3xl p-12 text-center text-white shadow-2xl transform hover:shadow-3xl transition-all duration-300">
-  <div className="max-w-4xl mx-auto">
-    <div className="text-2xl font-semibold mb-2 flex items-center justify-center gap-3">
+<section className="bg-gradient-to-r from-teal-600 via-teal-700 to-teal-800 rounded-3xl p-8 text-center text-white shadow-2xl transform hover:shadow-3xl transition-all duration-300">
+  <div className="max-w-3xl mx-auto">
+    <div className="text-4xl font-extrabold mb-1 flex items-center justify-center gap-3">
       <span className="text-3xl animate-pulse">📞</span>
       Need Immediate Help?
     </div>
     
-    <p className="text-teal-100 text-xl mb-6 font-medium">
+    <p className="text-teal-100 text-lg mb-3 font-semibold">
       We're here for you.
     </p>
 
-    <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-white to-teal-100 bg-clip-text text-transparent">
+    <h2 className="text-2xl font-bold mb-3">
       Ready to Get Your Printer Working?
     </h2>
     
-    <p className="text-xl mb-10 max-w-2xl mx-auto text-teal-50 leading-relaxed">
+    <p className="text-base mb-6 max-w-xl mx-auto text-teal-50">
       Our team of printer experts is ready to help you with all your printing needs
     </p>
 
-    <div className="flex flex-col items-center gap-6">
-      <p className="text-teal-100 text-lg font-medium">
+    <div className="flex flex-col items-center gap-3">
+      <p className="text-teal-100 text-sm font-medium">
         Click "Get Help Now" to start your support session.
       </p>
       
-      <button className="bg-white text-teal-700 font-bold py-4 px-10 rounded-xl flex items-center justify-center hover:bg-gray-50 hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-xl border-2 border-white">
-        <Chat className="mr-3 w-5 h-5" />
+      <button className="bg-white text-teal-700 font-bold py-2 px-6 rounded-lg flex items-center justify-center hover:bg-gray-50 hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-xl border-2 border-white">
+        <Chat className="mr-2 w-4 h-4" />
         Chat with an Expert
       </button>
     </div>
