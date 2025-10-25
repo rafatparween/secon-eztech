@@ -77,16 +77,16 @@ const Home = () => {
       {/* CTA Section */}
 <section className="bg-gradient-to-r from-teal-600 via-teal-700 to-teal-800 rounded-3xl p-8 text-center text-white shadow-2xl transform hover:shadow-3xl transition-all duration-300">
   <div className="max-w-3xl mx-auto">
-    <div className="text-4xl font-extrabold mb-1 flex items-center justify-center gap-3">
-      <span className="text-3xl animate-pulse">📞</span>
+    <div className="text-6xl font-extrabold mb-1 flex items-center justify-center gap-3">
+      <span className="text-6xl animate-pulse">📞</span>
       Need Immediate Help?
     </div>
     
-    <p className="text-teal-100 text-lg mb-3 font-semibold">
+    <p className="text-teal-100 text-lg mb-3 font-semibold text-lg">
       We're here for you.
     </p>
 
-    <h2 className="text-2xl font-bold mb-3">
+    <h2 className="text-3xl font-bold mb-3">
       Ready to Get Your Printer Working?
     </h2>
     
