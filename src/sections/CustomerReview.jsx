@@ -214,7 +214,7 @@ const CustomerReview = () => {
         </div>
       </div>
     </section>
-  );
+  )
 };
 
 export default CustomerReview;
